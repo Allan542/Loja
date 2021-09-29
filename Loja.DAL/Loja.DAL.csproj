@@ -7,8 +7,8 @@
     <ProjectGuid>{81C74DC5-C69F-47F5-9734-2F798ACD4AFC}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Loja.DAL1</RootNamespace>
-    <AssemblyName>Loja.DAL1</AssemblyName>
+    <RootNamespace>Loja.DAL</RootNamespace>
+    <AssemblyName>Loja.DAL</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>

@@ -7,8 +7,8 @@
     <ProjectGuid>{4326E94E-0D98-42FA-BFCF-661A6534E03E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Loja.BLL1</RootNamespace>
-    <AssemblyName>Loja.BLL1</AssemblyName>
+    <RootNamespace>Loja.BLL</RootNamespace>
+    <AssemblyName>Loja.BLL</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -45,7 +45,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Loja.DAL1\Loja.DAL.csproj">
+    <ProjectReference Include="..\Loja.DAL\Loja.DAL.csproj">
       <Project>{81c74dc5-c69f-47f5-9734-2f798acd4afc}</Project>
       <Name>Loja.DAL</Name>
     </ProjectReference>
