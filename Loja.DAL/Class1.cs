@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Loja.DAL1
+namespace Loja.DAL
 {
     public class Class1
     {

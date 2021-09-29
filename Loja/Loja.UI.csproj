@@ -79,15 +79,5 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Loja.BLL1\Loja.BLL.csproj">
-      <Project>{4326e94e-0d98-42fa-bfcf-661a6534e03e}</Project>
-      <Name>Loja.BLL</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Loja.DTO2\Loja.DTO.csproj">
-      <Project>{5d72d08a-bd00-4804-92e5-b1010e8f42b1}</Project>
-      <Name>Loja.DTO</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -45,7 +45,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Loja.DTO2\Loja.DTO.csproj">
+    <ProjectReference Include="..\Loja.DTO\Loja.DTO.csproj">
       <Project>{5d72d08a-bd00-4804-92e5-b1010e8f42b1}</Project>
       <Name>Loja.DTO</Name>
     </ProjectReference>

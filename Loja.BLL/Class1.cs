@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Loja.BLL1
+namespace Loja.BLL
 {
     public class Class1
     {
