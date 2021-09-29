@@ -10,11 +10,14 @@ using System.Windows.Forms;
 
 namespace Loja
 {
-    public partial class Form1 : Form
+    public partial class MDIParent1 : Form
     {
-        public Form1()
+
+
+        public MDIParent1()
         {
             InitializeComponent();
         }
     }
 }
+
