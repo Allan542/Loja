@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Loja.DTO;
+using Loja.BLL;
 
 namespace Loja
 {
@@ -15,6 +17,64 @@ namespace Loja
         public Cadastro_usuario()
         {
             InitializeComponent();
+        }
+
+        private void Cadastro_usuario_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                IList<usuario_DTO> listUsuario_DTO = new List<usuario_DTO>();
+                listUsuario_DTO = new UsuarioBLL().cargaUsuario();
+
+                /*Preencher dados no DataGridView*/
+                dataGridView1.DataSource = listUsuario_DTO;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            /*Linha atual que estiver selecionada aparecerá nos campos (textbox)
+             * acima do dataGrid*/
+            int sel = dataGridView1.CurrentRow.Index;
+            /* Valor de cada datagrid será enviado ao seu respectivo textbox*/
+
+            txtNome.Text = Convert.ToString(dataGridView1["nome", sel].Value);
+            txtLogin.Text = Convert.ToString(dataGridView1["login", sel].Value);
+            txtEmail.Text = Convert.ToString(dataGridView1["email", sel].Value);
+            txtSenha.Text = Convert.ToString(dataGridView1["senha", sel].Value);
+            txtCadastro.Text = Convert.ToString(dataGridView1["cadastro", sel].Value);
+
+            /* Condição se a situação for igual a "A" então o combobox ficará
+             * "Ativo" senao "Inativo" */
+
+            if (Convert.ToString(dataGridView1["situacao", sel].Value) == "A")
+            {
+                cboSituacao.Text = "Ativo";
+            }
+            else
+            {
+                cboSituacao.Text = "Inativo";
+            }
+
+            switch (Convert.ToString(dataGridView1["perfil", sel].Value))
+            {
+                /*Caso seja 1, será escolhido Administrador, caso seja 2, Operador
+                 * e caso 3, Gerencial*/
+                case "1":
+                    cboPerfil.Text = "Administrador";
+                    break;
+                case "2":
+                    cboPerfil.Text = "Operador";
+                    break;
+                case "3":
+                    cboPerfil.Text = "Gerencial";
+                    break;
+
+            }
         }
     }
 }
