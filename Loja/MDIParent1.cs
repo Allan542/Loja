@@ -18,6 +18,17 @@ namespace Loja
         {
             InitializeComponent();
         }
+
+        private void usuáriosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            /*Chamada do Form Cadastro_usuario no formato de MDI,
+             * ou seja para abrir dentro do Form Principal (MDI)
+             * Chama-se janela Filha. (ChildForm), fica dentro da janela mãe
+             */
+            Form childForm = new Cadastro_usuario();
+            childForm.MdiParent = this;
+            childForm.Show();
+        }
     }
 }
 

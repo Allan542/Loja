@@ -64,7 +64,7 @@ namespace Loja
             this.produtosToolStripMenuItem,
             this.usuáriosToolStripMenuItem});
             this.Cadastro.Name = "Cadastro";
-            this.Cadastro.Size = new System.Drawing.Size(122, 20);
+            this.Cadastro.Size = new System.Drawing.Size(66, 20);
             this.Cadastro.Text = "Cadastro";
             // 
             // produtosToolStripMenuItem
@@ -78,6 +78,7 @@ namespace Loja
             this.usuáriosToolStripMenuItem.Name = "usuáriosToolStripMenuItem";
             this.usuáriosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.usuáriosToolStripMenuItem.Text = "Usuários";
+            this.usuáriosToolStripMenuItem.Click += new System.EventHandler(this.usuáriosToolStripMenuItem_Click);
             // 
             // Estoque
             // 
